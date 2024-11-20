@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #ff9999;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prak1.PrimaryController">
+   <children>
+      <AnchorPane layoutY="90.0" prefHeight="514.0" prefWidth="1200.0" style="-fx-background-color: #9999ff;">
+         <children>
+            <Slider fx:id="Slider_Contagion" layoutX="300.0" layoutY="31.0" />
+            <Slider fx:id="Slider_Masks" layoutX="300.0" layoutY="59.0" />
+            <Slider fx:id="Slider_Effectivity" layoutX="300.0" layoutY="84.0" />
+            <Slider fx:id="Slider_Death" layoutX="300.0" layoutY="111.0" />
+            <Label layoutX="30.0" layoutY="27.0" text="Заразность (в %)">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="55.0" text="Кол-во масок (в %)">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="80.0" text="Эффективность масок (в %)">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="108.0" text="Смертность (в %)">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Contagion" layoutX="446.0" layoutY="27.0" text="0%">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Masks_Value" layoutX="446.0" layoutY="55.0" text="0%">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Masks_Effectivity" layoutX="446.0" layoutY="80.0" text="0%">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Death_Probability" layoutX="446.0" layoutY="108.0" text="0%">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="scene" layoutX="564.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="612.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+               <children>
+                  <Circle fx:id="Human23" fill="WHITE" layoutX="207.0" layoutY="201.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human25" fill="WHITE" layoutX="274.0" layoutY="381.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human26" fill="WHITE" layoutX="85.0" layoutY="209.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human27" fill="WHITE" layoutX="153.0" layoutY="38.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human28" fill="WHITE" layoutX="139.0" layoutY="103.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human29" fill="WHITE" layoutX="563.0" layoutY="211.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human30" fill="WHITE" layoutX="287.0" layoutY="137.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human31" fill="WHITE" layoutX="306.0" layoutY="77.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human32" fill="WHITE" layoutX="444.0" layoutY="38.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human33" fill="WHITE" layoutX="211.0" layoutY="299.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human34" fill="WHITE" layoutX="357.0" layoutY="215.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human35" fill="WHITE" layoutX="424.0" layoutY="415.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human36" fill="WHITE" layoutX="135.0" layoutY="9.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human37" fill="WHITE" layoutX="517.0" layoutY="431.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human38" fill="WHITE" layoutX="488.0" layoutY="232.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human39" fill="WHITE" layoutX="414.0" layoutY="70.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human40" fill="WHITE" layoutX="268.0" layoutY="340.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human41" fill="WHITE" layoutX="266.0" layoutY="99.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human42" fill="WHITE" layoutX="348.0" layoutY="59.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human43" fill="WHITE" layoutX="283.0" layoutY="205.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human44" fill="WHITE" layoutX="277.0" layoutY="14.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human45" fill="WHITE" layoutX="203.0" layoutY="17.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human46" fill="WHITE" layoutX="394.0" layoutY="156.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human47" fill="WHITE" layoutX="154.0" layoutY="169.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human48" fill="WHITE" layoutX="314.0" layoutY="328.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human49" fill="WHITE" layoutX="525.0" layoutY="179.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human50" fill="WHITE" layoutX="202.0" layoutY="385.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human51" fill="WHITE" layoutX="104.0" layoutY="165.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human52" fill="WHITE" layoutX="58.0" layoutY="106.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human53" fill="WHITE" layoutX="387.0" layoutY="308.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human54" fill="WHITE" layoutX="91.0" layoutY="15.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human55" fill="WHITE" layoutX="310.0" layoutY="181.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human56" fill="WHITE" layoutX="496.0" layoutY="51.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human57" fill="WHITE" layoutX="246.0" layoutY="166.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human58" fill="WHITE" layoutX="472.0" layoutY="259.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human59" fill="WHITE" layoutX="464.0" layoutY="328.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human60" fill="WHITE" layoutX="251.0" layoutY="25.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human61" fill="WHITE" layoutX="211.0" layoutY="71.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human62" fill="WHITE" layoutX="252.0" layoutY="228.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human63" fill="WHITE" layoutX="196.0" layoutY="332.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human64" fill="WHITE" layoutX="460.0" layoutY="102.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human65" fill="WHITE" layoutX="342.0" layoutY="303.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human66" fill="WHITE" layoutX="537.0" layoutY="44.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human67" fill="WHITE" layoutX="428.0" layoutY="135.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human68" fill="WHITE" layoutX="428.0" layoutY="197.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human69" fill="WHITE" layoutX="370.0" layoutY="274.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human70" fill="WHITE" layoutX="407.0" layoutY="258.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human71" fill="WHITE" layoutX="476.0" layoutY="373.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human72" fill="WHITE" layoutX="555.0" layoutY="324.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human73" fill="WHITE" layoutX="359.0" layoutY="427.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human74" fill="WHITE" layoutX="395.0" layoutY="377.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human75" fill="WHITE" layoutX="115.0" layoutY="236.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human76" fill="WHITE" layoutX="306.0" layoutY="377.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human77" fill="WHITE" layoutX="38.0" layoutY="423.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human78" fill="WHITE" layoutX="436.0" layoutY="172.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human79" fill="WHITE" layoutX="529.0" layoutY="256.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human80" fill="WHITE" layoutX="270.0" layoutY="34.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human81" fill="WHITE" layoutX="96.0" layoutY="385.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human82" fill="WHITE" layoutX="274.0" layoutY="161.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human83" fill="WHITE" layoutX="251.0" layoutY="300.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human84" fill="WHITE" layoutX="65.0" layoutY="336.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human85" fill="WHITE" layoutX="433.0" layoutY="276.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human86" fill="WHITE" layoutX="268.0" layoutY="266.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human87" fill="WHITE" layoutX="146.0" layoutY="381.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human88" fill="WHITE" layoutX="149.0" layoutY="304.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human89" fill="WHITE" layoutX="177.0" layoutY="259.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human90" fill="WHITE" layoutX="241.0" layoutY="81.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human91" fill="WHITE" layoutX="240.0" layoutY="125.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human92" fill="WHITE" layoutX="357.0" layoutY="348.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human93" fill="WHITE" layoutX="344.0" layoutY="123.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human94" fill="WHITE" layoutX="344.0" layoutY="252.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human95" fill="WHITE" layoutX="61.0" layoutY="152.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human96" fill="WHITE" layoutX="492.0" layoutY="131.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human97" fill="WHITE" layoutX="9.0" layoutY="96.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human98" fill="WHITE" layoutX="222.0" layoutY="260.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human99" fill="WHITE" layoutX="310.0" layoutY="270.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human100" fill="WHITE" layoutX="387.0" layoutY="103.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human1" fill="WHITE" layoutX="555.0" layoutY="423.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human2" fill="WHITE" layoutX="131.0" layoutY="67.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human3" fill="WHITE" layoutX="54.0" layoutY="82.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human4" fill="WHITE" layoutX="47.0" layoutY="213.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human5" fill="WHITE" layoutX="58.0" layoutY="256.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human6" fill="WHITE" layoutX="69.0" layoutY="44.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human7" fill="WHITE" layoutX="30.0" layoutY="19.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human8" fill="WHITE" layoutX="42.0" layoutY="40.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human9" fill="WHITE" layoutX="395.0" layoutY="25.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human10" fill="WHITE" layoutX="476.0" layoutY="183.0" radius="4.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" />
+                  <Circle fx:id="Human11" fill="WHITE" layoutX="387.0" layoutY="211.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human12" fill="WHITE" layoutX="10.0" layoutY="44.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human13" fill="WHITE" layoutX="346.0" layoutY="169.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human14" fill="WHITE" layoutX="158.0" layoutY="232.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human15" fill="WHITE" layoutX="199.0" layoutY="106.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human16" fill="WHITE" layoutX="87.0" layoutY="59.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human17" fill="WHITE" layoutX="370.0" layoutY="181.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human18" fill="WHITE" layoutX="173.0" layoutY="59.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human19" fill="WHITE" layoutX="504.0" layoutY="312.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human21" fill="WHITE" layoutX="521.0" layoutY="85.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human22" fill="WHITE" layoutX="525.0" layoutY="365.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human24" fill="WHITE" layoutX="563.0" layoutY="141.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Human20" fill="WHITE" layoutX="302.0" layoutY="228.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="button1" layoutX="490.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#initialize" text="Pause" visible="false" />
+            <Button fx:id="start" layoutX="163.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#initialize" text="Start" />
+            <Button fx:id="end" layoutX="204.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#initialize" text="End" visible="false" />
+            <Label fx:id="stats" disable="true" layoutX="30.0" layoutY="236.0" opacity="0.98" text="Статистика:" visible="false">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="zaraz" disable="true" layoutX="30.0" layoutY="257.0" opacity="0.98" text="Заразилось - " visible="false">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="notzaraz" disable="true" layoutX="30.0" layoutY="278.0" opacity="0.98" text="Не заразилось - " visible="false">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="vizd" disable="true" layoutX="30.0" layoutY="299.0" opacity="0.98" text="Выздоровело - " visible="false">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="umer" disable="true" layoutX="30.0" layoutY="320.0" opacity="0.98" text="Умерло - " visible="false">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="287.0" layoutY="144.0">
+               <image>
+                  <Image url="@Снимок%20экрана%20(947).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="149.0" layoutY="28.0" prefHeight="42.0" prefWidth="903.0" text="Иммитационная модель распространения вируса" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
